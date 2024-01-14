@@ -1,0 +1,142 @@
+/* import google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;500;700&display=swap');
+
+/* colors */
+:root {
+    --very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --desaturated-dark-blue: hsl(214, 17%, 51%);
+    --grayish-blue: hsl(212, 23%, 69%);
+    --light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+    font-size: 1rem;
+}
+
+body {
+    background-color: var(--light-grayish-blue);
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+.container {
+    width: 725px;
+    height: 285px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.left-box img {
+    width: 290px;
+    height: 100%;
+}
+
+.right-box {
+    background-color: #ffff;
+    padding: 2rem 2.5rem;
+    width: 442px;
+}
+
+h1 {
+    color: var(--very-dark-grayish-blue);
+    font-weight: 700;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+p {
+    color: var(--desaturated-dark-blue);
+    font-weight: 700;
+    font-size: .8rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.right-box img {
+    border-radius: 100%;
+    width: 12%;
+    height: auto;
+}
+
+.avatar-layout {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+}
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-right: 100px;
+    margin-left: 10px;
+}
+
+span {
+    color: var(--very-dark-grayish-blue);
+    font-weight: 700;
+    font-size: .8rem;
+    margin-bottom: 3px;
+}
+
+.data {
+    color: var(--grayish-blue);
+    font-weight: 500;
+}
+
+.icon {
+    background-color: var(--light-grayish-blue);
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+}
+
+.icon img {
+    width: 14px;
+    height: auto;
+}
+
+.icon:hover {
+    background-color: var(--grayish-blue);
+}
+
+@media screen and (max-width: 720px) {
+
+    .container {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .left-box img {
+        width: 100%;
+        height: 100%;
+    }
+    
+
+    .right-box {
+        background-color: #ffff;
+        padding: 2rem 2.5rem;
+        width: 100%;
+        height: auto;
+    }
+    
+}
